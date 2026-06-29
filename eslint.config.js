@@ -1,14 +1,10 @@
-{
-  "env": {
-    "node": true,
-    "commonjs": true,
-    "es2021": true,
-    "jest": true
+module.exports = [
+  {
+    files: ["src/**/*.js"],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: "commonjs",
+    },
+    rules: {},
   },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "ecmaVersion": 12
-  },
-  "rules": {
-  }
-}
+];
